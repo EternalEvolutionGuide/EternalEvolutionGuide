@@ -1,0 +1,148 @@
+body {
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  overflow: hidden;
+  background-color: rgb(25, 39, 59);
+}
+
+.header {
+  font-size: 2.5em;
+  letter-spacing: 0.06em;
+}
+
+.container {
+  max-width: 1000px;
+  min-height: 97vh;
+  max-height: 97vh;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(rgb(54, 78, 82), rgb(25, 39, 59));
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.filterDiv {
+  float: left;
+  text-align: center;
+  color: white;
+  display: none;
+  position: relative;
+}
+
+.show {
+  display: block;
+}
+
+.heroes {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1em, 1em;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.btnContainer {
+  background-color: rgba(204, 198, 198, 0.2);
+  border-style: solid;
+  border-color: rgba(211, 209, 209, 0.5);
+  border-width: 1px;
+  margin-bottom: 1em;
+}
+
+.btnContainer, .contentHeader, .heroes {
+  width: 92%;
+  margin-left: 2.5em;
+}
+
+.contentHeader {
+  padding-top: 1em; 
+  padding-bottom: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content{
+  font-size:1.7em;
+  text-align:left;
+  letter-spacing: 0.06em;
+}
+
+.content:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:99%; height:95.5%;
+  display:inline-block;
+  background: linear-gradient(to bottom, rgba(0,47,75,0) 0%,rgba(25, 39, 59, 0.8) 100%);
+  border-style: solid; 
+  border-color: white;
+  border-width: 1px;
+}
+
+.heroName {
+  position: absolute;
+  bottom: 0.3em;
+  left: 0.3em;
+  z-index: 3;
+}
+
+.squish {
+  letter-spacing: 0.02em;
+}
+
+#filterList {
+  margin-left: 1.7em;
+  font-size: 1.5em;
+}
+
+#searchBar {
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  height: 2em;
+  width: 20em;
+  margin-top: 1em;
+  background-color: rgba(204, 198, 198, 0.2);
+  color: white;
+  text-indent: 0.5em;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.searchIcon {
+  float: right;
+  position: absolute;
+  top: 2.05em;
+  right: 0.5em;
+}

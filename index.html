@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta id='viewport' name="viewport" content="width=device-width"/>
+    <title>Eternal Evolution Guide</title>
+</head>
+<body>
+<div class="container">
+  <div class="contentHeader">
+    <span class="header">Eternal Evolution Heroes List</span>
+    <input id="searchBar" onkeyup="searchHeroes()" type="text" name="search" placeholder="Search Heroes..">
+    <div class="searchIcon">&#x1F50E;&#xFE0E;</div>
+  </div>
+  <div class="btnContainer">
+    <button class="btn" filter="elite" group="rarity"><img src="icons/all.png" alt="all"></button>
+    <button class="btn" filter="SSS" group="rarity"><img src="icons/sss.png" alt="sss"></button>
+    &nbsp;|&nbsp;
+    <button class="btn" filter="terran" group="faction"><img src="icons/terran.png" alt="terran"></button>
+    <button class="btn" filter="atlas" group="faction"><img src="icons/atlas.png" alt="atlas"></button>
+    <button class="btn" filter="wenfyr" group="faction"><img src="icons/wenfyr.png" alt="wenfyr"></button>
+    &nbsp;|&nbsp;
+    <button class="btn" filter="tank" group="role"><img src="icons/Tank.png" alt="tank"></button>
+    <button class="btn" filter="vanguard" group="role"><img src="icons/Vanguard.png" alt="vanguard"></button>
+    <button class="btn" filter="assassin" group="role"><img src="icons/Assassin.png" alt="assassin"></button>
+    <button class="btn" filter="hunter" group="role"><img src="icons/Hunter.png" alt="hunter"></button>
+    <button class="btn" filter="support" group="role"><img src="icons/Support.png" alt="support"></button>
+    <button class="btn" filter="energy" group="role"><img src="icons/Energy.png" alt="energy"></button>
+    <button class="btn" filter="summoner" group="role"><img src="icons/Summon.png" alt="Summoner"></button>
+
+  </div>
+  
+  <div id="filterList">ALL HEROES</div>
+
+  <div class="heroes">
+    
+    <div class="filterDiv SSS atlas support">
+      <a class="content"><img src="heroCards/Aniruddha.jpg" alt="Aniruddha"><div class="heroName">Aniruddha</div></a>
+    </div>
+
+    <div class="filterDiv SSS atlas summoner">
+      <div class="content"><a><img src="heroCards/Anpu.jpg" alt="Anpu"><div class="heroName">Anpu</div></a>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas vanguard">
+      <div class="content"><a><img src="heroCards/Artas.jpg" alt="Artas"><div class="heroName">Artas</div></a>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran hunter">
+      <div class="content"><a><img src="heroCards/Azena.jpg" alt="Azena"><div class="heroName">Azena</div></a>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran assassin">
+      <div class="content"><a><img src="heroCards/BaileyHudson.jpg" alt="Bailey Hudson"><div class="heroName">Bailey Hudson</div></a>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr vanguard">
+      <div class="content"><a><img src="heroCards/Barrog.jpg" alt="Barrog"></a>
+        <div class="heroName">Barrog</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr tank">
+      <div class="content"><a><img src="heroCards/Bohr.jpg" alt="Bohr"></a>
+        <div class="heroName">Bohr</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran hunter">
+      <div class="content"><a><img src="heroCards/BotMarkII.jpg" alt="Bot Mark II"></a>
+        <div class="heroName">Bot Mark II</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr support">
+      <div class="content"><a><img src="heroCards/Botta.jpg" alt="Botta"></a>
+        <div class="heroName">Botta</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr vanguard">
+      <div class="content"><a><img src="heroCards/Crete.jpg" alt="Crete"></a>
+        <div class="heroName">Crete</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran assassin">
+      <div class="content"><a><img src="heroCards/Dominic.jpg" alt="Dominic"></a>
+        <div class="heroName">Dominic</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran summoner">
+      <div class="content"><a><img src="heroCards/Daniel.jpg" alt="Daniel"></a>
+        <div class="heroName">Daniel</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran summoner">
+      <div class="content"><a><img src="heroCards/Dorally.jpg" alt="Dorally"></a>
+        <div class="heroName">Dorally</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran hunter">
+      <div class="content"><a><img src="heroCards/Emma.jpg" alt="Emma"></a>
+        <div class="heroName">Emma</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran energy">
+      <div class="content"><a><img src="heroCards/Falvea.jpg" alt="Falvea"></a>
+        <div class="heroName">Falvea</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran vanguard">
+      <div class="content"><a><img src="heroCards/GuanYu.jpg" alt="Guan Yu"></a>
+        <div class="heroName">Guan Yu</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran tank">
+      <div class="content"><a><img src="heroCards/Hercules.jpg" alt="Hercules"></a>
+        <div class="heroName">Hercules</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas support">
+      <div class="content"><a><img src="heroCards/Hyupnos.jpg" alt="Hyupnos"></a>
+        <div class="heroName">Hyupnos</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran energy">
+      <div class="content"><a><img src="heroCards/Jaina.jpg" alt="Jaina"></a>
+        <div class="heroName">Jaina</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran energy">
+      <div class="content"><a><img src="heroCards/Kain.jpg" alt="Kain"></a>
+        <div class="heroName">Kain</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr energy">
+      <div class="content"><a><img src="heroCards/Kar'Maw.jpg" alt="Kar'Maw"></a>
+        <div class="heroName">Kar'Maw</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran summoner">
+      <div class="content"><a><img src="heroCards/Khalazza.jpg" alt="Khalazza"></a>
+        <div class="heroName">Khalazza</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas tank">
+      <div class="content"><a><img src="heroCards/Kuite.jpg" alt="Kuite"></a>
+        <div class="heroName">Kuite</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr tank">
+      <div class="content"><a><img src="heroCards/Langel.jpg" alt="Langel"></a>
+        <div class="heroName">Langel</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr vanguard">
+      <div class="content"><a><img src="heroCards/Leo.jpg" alt="Leo"></a>
+        <div class="heroName">Leo</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr support">
+      <div class="content"><a><img src="heroCards/Liran.jpg" alt="Liran"></a>
+        <div class="heroName">Liran</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr energy">
+      <div class="content"><a><img src="heroCards/Luke.jpg" alt="Luke"></a>
+        <div class="heroName">Luke</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS atlas support">
+      <div class="content"><a><img src="heroCards/Masrani.jpg" alt="Masrani"></a>
+        <div class="heroName">Masrani</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran support">
+      <div class="content"><a><img src="heroCards/Miranda.jpg" alt="Miranda"></a>
+        <div class="heroName">Miranda</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr hunter">
+      <div class="content"><a><img src="heroCards/Moriami.jpg" alt="Moriami"></a>
+        <div class="heroName">Moriami</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr summoner">
+      <div class="content"><a><img src="heroCards/Muka.jpg" alt="Muka"></a>
+        <div class="heroName">Muka</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas energy">
+      <div class="content"><a><img src="heroCards/Murphyro.jpg" alt="Murphyro"></a>
+        <div class="heroName">Murphyro</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr energy">
+      <div class="content"><a><img src="heroCards/Nadilus.jpg" alt="Nadilus"></a>
+        <div class="heroName">Nadilus</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr vanguard">
+      <div class="content"><a><img src="heroCards/NaFeng.jpg" alt="Na Feng"></a>
+        <div class="heroName">Na Feng</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr energy">
+      <div class="content"><a><img src="heroCards/Nagrama.jpg" alt="Nagrama"></a>
+        <div class="heroName">Nagrama</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr energy">
+      <div class="content"><a><img src="heroCards/Nordthion.jpg" alt="Nordthion"></a>
+        <div class="heroName">Nordthion</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas tank">
+      <div class="content"><a><img src="heroCards/Oak.jpg" alt="Oak"></a>
+        <div class="heroName">Oak</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran tank">
+      <div class="content"><a><img src="heroCards/Oisa.jpg" alt="Oisa"></a>
+        <div class="heroName">Oisa</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran hunter">
+      <div class="content"><a><img src="heroCards/OldJohn.jpg" alt="Old John"></a>
+        <div class="heroName">Old John</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran energy">
+      <div class="content"><a><img src="heroCards/Omar.jpg" alt="Omar"></a>
+        <div class="heroName">Omar</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran energy">
+      <div class="content"><a><img src="heroCards/Orn.jpg" alt="Orn"></a>
+        <div class="heroName">Orn</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran tank">
+      <div class="content"><a><img src="heroCards/Pandemonium.jpg" alt="Pandemonium"></a>
+        <div class="heroName">Pandemonium</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas energy">
+      <div class="content"><a><img src="heroCards/Poluno.jpg" alt="Poluno"></a>
+        <div class="heroName">Poluno</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr hunter">
+      <div class="content"><a><img src="heroCards/Prigor.jpg" alt="Prigor"></a>
+        <div class="heroName">Prigor</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr assassin">
+      <div class="content"><a><img src="heroCards/Rakkana.jpg" alt="Rakkana"></a>
+        <div class="heroName">Rakkana</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran assassin">
+      <div class="content"><a><img src="heroCards/Randall.jpg" alt="Randall"></a>
+        <div class="heroName">Randall</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran energy">
+      <div class="content"><a><img src="heroCards/Ravenna.jpg" alt="Ravenna"></a>
+        <div class="heroName">Ravenna</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran hunter">
+      <div class="content"><a><img src="heroCards/Rebecca.jpg" alt="Rebecca"></a>
+        <div class="heroName">Rebecca</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS terran support">
+      <div class="content"><a><img src="heroCards/Rez.jpg" alt="Rez"></a>
+        <div class="heroName">Rez</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS atlas assassin">
+      <div class="content"><a><img src="heroCards/Rickert.jpg" alt="Rickert"></a>
+        <div class="heroName">Rickert</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr hunter">
+      <div class="content"><a><img src="heroCards/Riserris.jpg" alt="Riserris"></a>
+        <div class="heroName">Riserris</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran support">
+      <div class="content"><a><img src="heroCards/Serena.jpg" alt="Serena"></a>
+        <div class="heroName">Serena</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr summoner">
+      <div class="content"><a><img src="heroCards/Shenwei.jpg" alt="Shenwei"></a>
+        <div class="heroName">Shenwei</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS atlas summoner">
+      <div class="content"><a><img src="heroCards/Skooer&Hatty.jpg" alt="Skooer & Hatty"></a>
+        <div class="heroName squish">Skooer & Hatty</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite atlas energy">
+      <div class="content"><a><img src="heroCards/Sorietta.jpg" alt="Sorietta"></a>
+        <div class="heroName">Sorietta</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS wenfyr summoner">
+      <div class="content"><a><img src="heroCards/Sorvaley.jpg" alt="Sorvaley"></a>
+        <div class="heroName">Sorvaley</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite wenfyr hunter">
+      <div class="content"><a><img src="heroCards/Taylor.jpg" alt="Taylor"></a>
+        <div class="heroName">Taylor</div>
+      </div>
+    </div>
+
+    <div class="filterDiv elite terran tank">
+      <div class="content"><a><img src="heroCards/Vegnus.jpg" alt="Vegnus"></a>
+        <div class="heroName">Vegnus</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS atlas tank">
+      <div class="content"><a><img src="heroCards/Womigon.jpg" alt="Womigon"></a>
+        <div class="heroName">Womigon</div>
+      </div>
+    </div>
+
+    <div class="filterDiv SSS atlas tank">
+      <div class="content"><a><img src="heroCards/Zaida.jpg" alt="Zaida"></a>
+        <div class="heroName">Zaida</div>
+      </div>
+    </div>
+    
+    <div class="filterDiv elite atlas hunter">
+      <div class="content"><a><img src="heroCards/Zander.jpg" alt="Zander"></a>
+        <div class="heroName">Zander</div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+<script src="javascript.js"></script>
+</html>
