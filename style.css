@@ -2,7 +2,19 @@ body {
   color: white;
   font-family: 'Bebas Neue', sans-serif;
   overflow: hidden;
-  background-color: rgb(25, 39, 59);
+  background-image: url('https://static.vecteezy.com/system/resources/previews/022/717/373/large_2x/concept-of-nebula-with-galaxies-in-deep-space-cosmos-discovery-outer-space-and-stars-generat-ai-free-photo.jpg');
+}
+
+.background {
+  color: white
+}
+
+.left{
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .header {
@@ -12,11 +24,11 @@ body {
 
 .container {
   max-width: 1000px;
-  min-height: 97vh;
-  max-height: 97vh;
+  min-height: 98.5vh;
+  max-height: 98.5vh;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgb(54, 78, 82), rgb(25, 39, 59));
+  background-image: linear-gradient(rgba(54, 78, 82, 0.5), rgba(25, 39, 59, 0.5));
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -54,21 +66,39 @@ body {
   background: transparent;
 }
 
+.divide {
+  font-size: 1.5em;
+  padding-bottom: 0.3em;
+}
+
 .btn:hover {
-  background-color: #ddd;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(63%) saturate(1497%) hue-rotate(170deg) brightness(99%) contrast(88%);
+}
+
+.factionDiv .btn, .rarityDiv .btn {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
 }
 
 .btn.active {
-  background-color: #666;
-  color: white;
+  filter: invert(54%) sepia(33%) saturate(7076%) hue-rotate(163deg) brightness(96%) contrast(102%);
+}
+
+.btn img {
+  max-width: 2.5em;
 }
 
 .btnContainer {
-  background-color: rgba(204, 198, 198, 0.2);
-  border-style: solid;
-  border-color: rgba(211, 209, 209, 0.5);
+  background-image: linear-gradient(to right, rgba(204, 198, 198, 0), rgba(204, 198, 198, 0.1), rgba(204, 198, 198, 0.1), rgba(204, 198, 198, 0));
+  border-bottom: solid;
+  border-top: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, rgba(204, 198, 198, 0), rgba(204, 198, 198, 0.2), rgba(204, 198, 198, 0.2), rgba(204, 198, 198, 0));
   border-width: 1px;
   margin-bottom: 1em;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  padding-top: 0.3em;
 }
 
 .btnContainer, .contentHeader, .heroes {
