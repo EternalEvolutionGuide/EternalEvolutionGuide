@@ -12,29 +12,35 @@
 <div class="container">
   <div class="contentHeader">
     <span class="header">Eternal Evolution Heroes List</span>
+    <div class="search">
     <input id="searchBar" onkeyup="searchHeroes()" type="text" name="search" placeholder="Search Heroes..">
     <div class="searchIcon">&#x1F50E;&#xFE0E;</div>
+    </div>
   </div>
   <div class="btnContainer">
-    <div class="rarityDiv">
-    <button class="btn" filter="elite" group="rarity"><img src="icons/all.png" alt="all"></button>
-    <button class="btn" filter="SSS" group="rarity"><img src="icons/sss.png" alt="sss"></button>
+    <div class="merge">
+      <div class="rarityDiv">
+        <button class="btn" filter="elite" group="rarity"><img src="icons/all.png" alt="all"></button>
+        <button class="btn" filter="SSS" group="rarity"><img src="icons/sss.png" alt="sss"></button>
+      </div>
+      <div class="divide">&#65372;</div>
+      <div class="factionDiv">
+        <button class="btn" filter="terran" group="faction"><img src="icons/terran.png" alt="terran"></button>
+        <button class="btn" filter="atlas" group="faction"><img src="icons/atlas.png" alt="atlas"></button>
+        <button class="btn" filter="wenfyr" group="faction"><img src="icons/wenfyr.png" alt="wenfyr"></button>
+      </div>
     </div>
-    <div class="divide">&#65372;</div>
-    <div class="factionDiv">
-    <button class="btn" filter="terran" group="faction"><img src="icons/terran.png" alt="terran"></button>
-    <button class="btn" filter="atlas" group="faction"><img src="icons/atlas.png" alt="atlas"></button>
-    <button class="btn" filter="wenfyr" group="faction"><img src="icons/wenfyr.png" alt="wenfyr"></button>
-    </div>
-    <div class="divide">&#65372;</div>
-    <div class="roleDiv">
-    <button class="btn" filter="tank" group="role"><img src="icons/Tank.png" alt="tank"></button>
-    <button class="btn" filter="vanguard" group="role"><img src="icons/Vanguard.png" alt="vanguard"></button>
-    <button class="btn" filter="assassin" group="role"><img src="icons/Assassin.png" alt="assassin"></button>
-    <button class="btn" filter="hunter" group="role"><img src="icons/Hunter.png" alt="hunter"></button>
-    <button class="btn" filter="support" group="role"><img src="icons/Support.png" alt="support"></button>
-    <button class="btn" filter="energy" group="role"><img src="icons/Energy.png" alt="energy"></button>
-    <button class="btn" filter="summoner" group="role"><img src="icons/Summon.png" alt="Summoner"></button>
+    <div class="divide hide">&#65372;</div>
+    <div>
+      <div class="roleDiv">
+        <button class="btn" filter="tank" group="role"><img src="icons/Tank.png" alt="tank"></button>
+        <button class="btn" filter="vanguard" group="role"><img src="icons/Vanguard.png" alt="vanguard"></button>
+        <button class="btn" filter="assassin" group="role"><img src="icons/Assassin.png" alt="assassin"></button>
+        <button class="btn" filter="hunter" group="role"><img src="icons/Hunter.png" alt="hunter"></button>
+        <button class="btn" filter="support" group="role"><img src="icons/Support.png" alt="support"></button>
+        <button class="btn" filter="energy" group="role"><img src="icons/Energy.png" alt="energy"></button>
+        <button class="btn" filter="summoner" group="role"><img src="icons/Summon.png" alt="Summoner"></button>
+      </div>
     </div>
   </div>
   
