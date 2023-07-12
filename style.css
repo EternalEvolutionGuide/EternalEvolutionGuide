@@ -74,16 +74,16 @@ body {
   padding-bottom: 0.3em;
 }
 
-.btn:hover {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(63%) saturate(1497%) hue-rotate(170deg) brightness(99%) contrast(88%);
-}
-
 .factionDiv .btn, .rarityDiv .btn {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
 }
 
+.btn:hover {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(2335%) hue-rotate(121deg) brightness(98%) contrast(95%);
+}
+
 .btn.active {
-  filter: invert(54%) sepia(33%) saturate(7076%) hue-rotate(163deg) brightness(96%) contrast(102%);
+  filter: brightness(0) saturate(100%) invert(67%) sepia(24%) saturate(4963%) hue-rotate(124deg) brightness(95%) contrast(104%);
 }
 
 .btn img {
